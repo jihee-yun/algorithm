@@ -4,13 +4,10 @@ class Solution {
         
         String sum = "" + a + b;
         int sum2 = Integer.parseInt(sum);
-        int mul = 2 * a * b;
         
-        if(sum2 > mul) {
+        if(sum2 >= 2 * a * b) {
             answer = sum2;
-        } else if(sum2 == mul) {
-            answer = sum2;
-        } else answer = mul;
+        } else answer = 2 * a * b;
         
         return answer;
     }
